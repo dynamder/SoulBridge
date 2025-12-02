@@ -1,0 +1,3 @@
+[submodule "crates/soul_macros"]
+	path = crates/soul_macros
+	url = .\\crates\\soul_macros\\

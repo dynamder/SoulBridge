@@ -1,0 +1,7 @@
+[workspace]
+resolver = "3"
+members = ["crates/soul_msgs", "crates/soul_node", "crates/soul_macros"]
+
+[workspace. dependencies]
+zenoh = {version = "1.5.1", features = ["shared-memory"]}
+
