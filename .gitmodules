@@ -1,9 +1,9 @@
 [submodule "crates/soul_macros"]
 	path = crates/soul_macros
-	url = .\\crates\\soul_macros\\
+	url = https://github.com/dynamder/SoulMacros.git
 [submodule "crates/soul_msgs"]
 	path = crates/soul_msgs
-	url = .\\crates\\soul_msgs\\
+	url = https://github.com/dynamder/SoulMsgs.git
 [submodule "crates/soul_node"]
 	path = crates/soul_node
-	url = .\\crates\\soul_node\\
+	url = https://github.com/dynamder/SoulNode.git
