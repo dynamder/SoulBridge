@@ -1,4 +1,4 @@
-# AGENTS.md - SoulBridge Development Guide
+﻿# AGENTS.md - SoulBridge Development Guide
 
 ## Project Overview
 
