@@ -24,10 +24,10 @@ description: "Task list for Zenoh Type-Safe Wrapper feature implementation"
 
 **Purpose**: Initialize and configure the Rust workspace for new crates
 
-- [ ] T001 Create crates/soul_macros/Cargo.toml with nom, miette, quote, syn dependencies
-- [ ] T002 Create crates/soul_msgs/Cargo.toml with serde, zenoh-ext dependencies
-- [ ] T003 [P] Add workspace dependencies to root Cargo.toml if needed
-- [ ] T004 Run cargo build to verify all dependencies resolve
+- [X] T001 Create crates/soul_macros/Cargo.toml with nom, miette, quote, syn dependencies
+- [X] T002 Create crates/soul_msgs/Cargo.toml with serde, zenoh-ext dependencies
+- [X] T003 [P] Add workspace dependencies to root Cargo.toml if needed
+- [X] T004 Run cargo build to verify all dependencies resolve
 
 ---
 
@@ -37,15 +37,15 @@ description: "Task list for Zenoh Type-Safe Wrapper feature implementation"
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T005 Define .smsg syntax IR types in soul_macros/src/ir.rs (SmsgFile, MessageDef, Field, FieldType, PrimitiveType)
-- [ ] T006 Implement .smsg lexer in soul_macros/src/parser/lexer.rs using nom
-- [ ] T007 Implement .smsg parser in soul_macros/src/parser/smsg.rs (parse message definitions)
-- [ ] T008 [P] Add SmsgParseError type in soul_macros/src/error.rs with miette integration
-- [ ] T009 Create code generation trait in soul_macros/src/codegen/mod.rs
-- [ ] T010 Implement Rust struct code generator in soul_macros/src/codegen/struct_gen.rs
-- [ ] T011 [P] Add Serialize/Deserialize derive code generation in soul_macros/src/codegen/derive_gen.rs
-- [ ] T012 Create #[smsg] attribute macro entry point in soul_macros/src/lib.rs
-- [ ] T013 Create example .smsg file in crates/soul_msgs/smsg/chat.smsg for testing
+- [X] T005 Define .smsg syntax IR types in soul_macros/src/ir.rs (SmsgFile, MessageDef, Field, FieldType, PrimitiveType)
+- [X] T006 Implement .smsg lexer in soul_macros/src/parser/lexer.rs using nom
+- [X] T007 Implement .smsg parser in soul_macros/src/parser/smsg.rs (parse message definitions)
+- [X] T008 [P] Add SmsgParseError type in soul_macros/src/error.rs with miette integration
+- [X] T009 Create code generation trait in soul_macros/src/codegen/mod.rs
+- [X] T010 Implement Rust struct code generator in soul_macros/src/codegen/struct_gen.rs
+- [X] T011 [P] Add Serialize/Deserialize derive code generation in soul_macros/src/codegen/derive_gen.rs
+- [X] T012 Create #[smsg] attribute macro entry point in soul_macros/src/lib.rs
+- [X] T013 Create example .smsg file in crates/soul_msgs/smsg/chat.smsg for testing
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -59,13 +59,13 @@ description: "Task list for Zenoh Type-Safe Wrapper feature implementation"
 
 ### Implementation for User Story 1
 
-- [ ] T014 [P] [US1] Add module declarations in crates/soul_macros/src/lib.rs
-- [ ] T015 [US1] Implement #[smsg("path")] attribute macro to parse .smsg file and generate code
-- [ ] T016 [US1] Test .smsg parser with chat.smsg example
-- [ ] T017 [US1] Verify generated ChatMessage struct has fields: sender(String), content(String), timestamp(i64)
-- [ ] T018 [US1] Add nested message type support (Position in RobotState)
-- [ ] T019 [US1] Add array type support (float64[], int32[3])
-- [ ] T020 [US1] Verify error messages show correct line/column for parse errors
+- [X] T014 [P] [US1] Add module declarations in crates/soul_macros/src/lib.rs
+- [X] T015 [US1] Implement #[smsg("path")] attribute macro to parse .smsg file and generate code
+- [X] T016 [US1] Test .smsg parser with chat.smsg example
+- [X] T017 [US1] Verify generated ChatMessage struct has fields: sender(String), content(String), timestamp(i64)
+- [X] T018 [US1] Add nested message type support (Position in RobotState)
+- [X] T019 [US1] Add array type support (float64[], int32[3])
+- [X] T020 [US1] Verify error messages show correct line/column for parse errors
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
@@ -144,8 +144,8 @@ description: "Task list for Zenoh Type-Safe Wrapper feature implementation"
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T038 [P] Run cargo fmt and cargo clippy on all crates
-- [ ] T039 Add unit tests for .smsg parser in soul_macros
+- [X] T038 [P] Run cargo fmt and cargo clippy on all crates
+- [X] T039 Add unit tests for .smsg parser in soul_macros
 - [ ] T040 [P] Add unit tests for Querier/Queryable in soul_node
 - [ ] T041 Run integration tests (local_echo, liveliness) to verify nothing broke
 - [ ] T042 Update quickstart.md with complete working examples
